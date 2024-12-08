@@ -121,6 +121,7 @@ if (write(sockfd2, response, strlen(response)) < 0) {
 } else {
 printf("You are actually using this rubbish?\n");
 }
+response[74] = 0;
 close(sockfd2);
 }
 }
